@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Tracker Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nutrition Tracker</h1>
+        
+        <!-- Month and Year Navigation -->
+        <div class="nav">
+            <button id="prev-month">Previous</button>
+            <h2 id="current-month-year"></h2>
+            <button id="next-month">Next</button>
+        </div>
+
+        <div id="calendar"></div>
+
+        <!-- Nutrition Form -->
+        <div id="nutrition-form" class="hidden">
+            <h2 id="selected-date">Date: </h2>
+            <label for="calories">Calories:</label>
+            <input type="number" id="calories" placeholder="Enter calories">
+            <label for="protein">Protein (grams):</label>
+            <input type="number" id="protein" placeholder="Enter protein">
+            <button id="save-button">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
